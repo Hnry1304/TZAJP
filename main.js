@@ -8,9 +8,10 @@ function login(event){
 
     if( username === "henry" && password === "1234"){
 
-        alert("Login Exitoso");
+        window.location.href = "home.html";
     }else{
         errorMessage.textContent = "Usuario o contrasena incorrectos";
+        
     }
 }
 

@@ -1,0 +1,234 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: rgb(233, 233, 233);
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a{
+    display: block;
+    margin: 15px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    margin-top: 30px;
+}
+
+.section1{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 300px;
+    grid-template-areas: 
+        "imagen1 texto texto"
+        "imagen1  imagen2 imagen3"
+    ;
+    gap: 30px;
+    
+}
+.item1{
+    grid-area: imagen1;
+}
+
+.item2{
+    grid-area: texto;
+    padding: 30px 0px;
+}
+
+.item2 hr{
+    width: 60px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.item2 p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.8em;
+    padding: 20px 0;
+}
+
+.item3{
+    grid-area: imagen2;
+}
+
+.item4{
+    grid-area: imagen3;
+}
+
+.item1 img{
+    width: 100%;
+    height: 90%;
+}
+
+.item3 img{
+    width: 100%;
+}
+
+.item4 img{
+    width: 100%;
+}
+
+.formulario{
+    background-color: rgb(19, 112, 90);
+    width: 85%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.formulario div{
+    width: 50%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px ;
+    grid-template-areas: 
+    "titulo titulo"
+    "input boton"
+    ;
+    gap: 10px;
+}
+
+.formulario div p{
+    grid-area: titulo;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    color: aliceblue;
+}
+
+.formulario div input{
+    width: 80%;
+    grid-area: input;
+    padding: 10px 0;
+    text-align: center;
+    justify-self: flex-end;
+}
+
+.formulario div button{
+    width: 50%;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section2{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section2 div p{
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+}
+.section2 div hr{
+    width: 100px;
+    border: 2px solid #000;
+    margin-top: 10px;
+}
+
+.section2 p{
+    width: 50%;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section3{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.box{
+    width: 33%;
+    height: 450px;
+    position: relative;
+}
+
+.section3 div img{
+    width: 100%;
+}
+
+.textDiv{   
+    width: 130px;
+    background-color: rgb(214, 212, 212);
+    position: absolute;
+    bottom: 80px;
+    left: 30%;
+    padding: 40px 20px;
+}
+
+.textDiv hr{
+    border: 2px solid #000;
+    width: 50px;
+    margin: 5px 0px;
+    
+}
+
+.textDiv p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8em;
+}
+
+.textBox{
+    width: 80%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.divImagen{
+    width: 60%;
+    margin: 0px auto;
+    background-color: antiquewhite;
+}
+
+.divImagen img{
+    width: 100%;
+}
+
+.section4{
+    width: 85%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows : 1fr;
+    grid-template-areas: 
+    "item1 item2 item3 item4 item5"
+    "item6 item6 item6 item6 item6"
+    ;
+    gap: 20px;
+
+}
+
+.section4 div img{
+    width: 100%;
+}
+
+.section4 hr{
+    
+    border: 1px solid #504e4e;
+    grid-area: item6;
+}
